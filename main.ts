@@ -1,4 +1,6 @@
 // mend: the CLI SPEC.md specifies, implemented in full (sections 1-10).
+// Parsers cover unified diffs, SEARCH/REPLACE, V4A and JSON edits; line matching uses
+// the three whitespace-tolerance tiers of section 5, with strict mode limiting it to tier 0.
 // Node 22, standard library alone. Run as `node main.ts [options] [PATCH]`.
 import { mkdirSync, readFileSync, rmSync, statSync, writeFileSync, writeSync } from 'node:fs';
 import { dirname } from 'node:path';
